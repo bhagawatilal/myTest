@@ -14,11 +14,16 @@
 }
 
 #tabs{
-  border-style: ridge;
   position: fixed;
   left: 25%;
   right: 25%;
   width: 200px;
+}
+.tab-button{
+  border-style: ridge;
+  background-color: blue;
+  color:white;
+
 }
 #setting{
   position: absolute;
