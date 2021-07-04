@@ -8,7 +8,7 @@
         <ion-tab-button class="tab-button" tab="web">  
           <ion-label>web</ion-label>  
         </ion-tab-button>  
-          
+        
         <ion-tab-button class="tab-button" tab="gallery">  
           <ion-label>gallery</ion-label>  
         </ion-tab-button>  
@@ -18,29 +18,32 @@
         </ion-tab-button>  
       </ion-tab-bar>  
     </ion-tabs>  
+    <ion-button id="my-location" (click)="myLocation()">
+      Location
+    </ion-button>
   
 <div id=setting>
   <div>
     <div id="div_start">
       <p id="loop_text">Loop</p>
-      <p id="start" (click)="clicked()">Start</p>
+      <p id="start" (click)="clicked('start')">Start</p>
     </div>
     <div id="div_choose_start">
-      <img id="img_up" src="assets/icon/up.png" (click)="clicked()">
+      <img id="img_up" src="assets/icon/up.png" (click)="clicked('choose start')">
       <p id="up_txt">0.00</p>
     </div>
     <div id=div_loop>
       <p id=txt_loop>off</p>
-      <img id="img_loop" src="assets/icon/infinite_on.png" (click)="clicked()">
+      <img id="img_loop" src="assets/icon/infinite_on.png" (click)="clicked('loop')">
     </div>
     <div id="div_choose_end">
-      <img id="img_up" src="assets/icon/up.png" (click)="clicked()">
+      <img id="img_up" src="assets/icon/up.png" (click)="clicked('uploop')">
       <p id="up_txt"  >0.00 </p>
     </div>
 
     <div id="div_end">
       <p id="loop_text">Loop</p>
-      <p id="end" (click)="clicked()">End</p>
+      <p id="end" (click)="clicked('end')">End</p>
     </div>
   </div>
   <div id="div_sec_row">
@@ -48,23 +51,23 @@
       <p class="small_txt">Speed 1.0x</p>
       <div class="img1">
       
-        <img class="plus" src="assets/icon/minus.png" (click)="clicked()">
-        <img class="plus" src="assets/icon/plus.png" (click)="clicked()">
+        <img class="plus" src="assets/icon/minus.png" (click)="clicked('minus')">
+        <img class="plus" src="assets/icon/plus.png" (click)="clicked('plus')">
       </div>
     </div>
     <div class="sec_row" id="div_repeat">
       <p id= "txt_repeat" class="small_txt">Repeat</p>
       <div class="img1">
-        <img class="plus" src="assets/icon/minus.png" (click)="clicked()">
-        <img class="plus" src="assets/icon/plus.png" (click)="clicked()">
+        <img class="plus" src="assets/icon/minus.png" (click)="clicked('minus')">
+        <img class="plus" src="assets/icon/plus.png" (click)="clicked('plus')">
       </div>
     </div>
     <div class="sec_row" id="div_shift">
       
-      <p class=small_txt (click)="clicked()">Shift loop 5s</p>
+      <p class=small_txt (click)="clicked('shift')">Shift loop 5s</p>
       <div class="img1">
-        <img class=plus src="assets/icon/minus.png" (click)="clicked()">
-        <img class=plus src="assets/icon/plus.png" (click)="clicked()">
+        <img class=plus src="assets/icon/minus.png" (click)="clicked('plus')">
+        <img class=plus src="assets/icon/plus.png" (click)="clicked('minus')">
       </div>
     </div>
   </div>
